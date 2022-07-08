@@ -7,71 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link href="bootstrap.css" rel="stylesheet">
+	 <link rel="stylesheet" href="header.css">
+	 <link rel="stylesheet" href="rooms.css">
+	 <link rel="stylesheet" href="advantages.css">
 
-    <title>Hello, world!</title>
-	 <style>
-
-
-
-		*{
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-		}
-
-		.container{
-			width: 80%;
-		}
-
-		.room-shortcut-image{
-			background-color: black;
-			height: 75px;
-			width: 75px;
-		}
-
-		.room-el{
-			min-height: 350px;
-		}
-
-		.image-container{
-			min-height: 300px;
-		}
-
-		.description{
-			min-height: 200px;
-		}
-
-
-
-
-
-
-
-		a.button7 {
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
-  padding: .8em 1em calc(.8em + 3px);
-  border-radius: 3px;
-  background: rgb(64,199,129);
-  box-shadow: 0 -3px rgb(53,167,110) inset;
-  transition: 0.2s;
-} 
-a.button7:hover { background: rgb(53, 167, 110); }
-a.button7:active {
-  background: rgb(33,147,90);
-  box-shadow: 0 3px rgb(33,147,90) inset;
-}
-
-
-
-		
-
-
-
-
-
-	 </style>
+    <title>Комнаты</title>
   </head>
   <body>
 	
@@ -96,16 +36,18 @@ a.button7:active {
 					<a class="nav-link" href="#">Акции</a>
 				 </li>
 				 <li class="nav-item mx-auto px-3" >
-					<a class="nav-link" href="#">Правила</a>
+					<a class="nav-link" href="rules.html">Правила</a>
 				 </li>
 				 <li class="nav-item mx-auto px-3">
-					<a class="nav-link" href="#">Контакты</a>
+					<a class="nav-link" href="contacts.html">Контакты</a>
 				 </li>
 			 </ul>
 		  </div>
 		</div>
 	 </nav>
 
+
+	 <!-- Комнаты -->
 	 <div class="rooms">
 		<div class="container">
 			<div class="row">
@@ -163,7 +105,7 @@ a.button7:active {
 
 
 						<!-- Cтоимость, хар... -->
-						<div class="description col-12 col-lg-6 border d-flex flex-column justify-content-around">
+						<div class="description col-12 col-lg-6 border d-flex flex-column justify-content-around mt-3">
 
 
 
@@ -239,7 +181,7 @@ a.button7:active {
 
 
 						<!-- Cтоимость, хар... -->
-						<div class="description col-12 col-lg-6 border d-flex flex-column justify-content-around">
+						<div class="description col-12 col-lg-6 border d-flex flex-column justify-content-around mt-3">
 
 
 
@@ -273,11 +215,42 @@ a.button7:active {
 		</div>
 	 </div>
 
+
+	 <!-- Преимущества -->
+	 <div class="advantages bg-light my-5">
+		<div class="container">
+			<div class="row my-4">
+				<div class="col d-flex justify-content-center align-items-center">
+					<h1>Наши преимущества</h1>
+				</div>
+			</div>
+			<div class="row d-flex flex-wrap justify-content-center">
+					<div class="advantages-element col-12 col-sm-6 col-xl-4 d-flex flex-column justify-content-center align-items-center">
+						<div class="image rounded-circle"></div>
+						<p class="text">преимущество 1</p>
+					</div>
+					<div class="advantages-element col-12 col-sm-6 col-xl-4 d-flex flex-column justify-content-center align-items-center">
+						<div class="image rounded-circle"></div>
+						<p class="text">преимущество 2</p>
+					</div>
+					<div class="advantages-element col-12 col-sm-6 col-xl-4 d-flex flex-column justify-content-center align-items-center">
+						<div class="image rounded-circle"></div>
+						<p class="text">преимущество 3</p>
+					</div>
+					<div class="advantages-element col-12 col-sm-6 col-xl-4 d-flex flex-column justify-content-center align-items-center">
+						<div class="image rounded-circle"></div>
+						<p class="text">преимущество 4</p>
+					</div>
+					<div class="advantages-element col-12 col-sm-6 col-xl-4 d-flex flex-column justify-content-center align-items-center">
+						<div class="image rounded-circle"></div>
+						<p class="text">преимущество 5</p>
+					</div>
+			</div>
+		</div>
+	</div>
+
 	
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	 <script>
-	
-	 </script>
   </body>
 </html>
