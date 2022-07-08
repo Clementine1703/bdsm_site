@@ -43,6 +43,28 @@
 
 
 
+
+
+
+
+		a.button7 {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+} 
+a.button7:hover { background: rgb(53, 167, 110); }
+a.button7:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+
+
 		
 
 
@@ -92,9 +114,84 @@
 					<p>описание</p>
 				</div>
 			</div>
-			<div class="row">
 
 				<!-- Комната 1 -->
+				<div class="room-el col-12 border my-4">
+					<div class="row">
+
+						<!-- Слайдер -->
+						<div class="image-container col-12 col-xl-6 border">
+							<div id="room-1" class="carousel slide room col-12" data-bs-interval="false" data-bs-ride="carousel">
+								<div class="carousel-indicators">
+								  <button type="button" data-bs-target="#room-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+								  <button type="button" data-bs-target="#room-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+								  <button type="button" data-bs-target="#room-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+								</div>
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+									  <img src="19.jpg" class="d-block w-100" alt="...">
+									  <div class="carousel-caption d-none d-md-block">
+										 <h5>Комната 2</h5>
+										 <p>фото 1</p>
+									  </div>
+									</div>
+									<div class="carousel-item">
+									  <img src="20.jpg" class="d-block w-100 h-100" alt="...">
+									  <div class="carousel-caption d-none d-md-block">
+										 <h5>Комната 2</h5>
+										 <p>фото 2</p>
+									  </div>
+									</div>
+									<div class="carousel-item">
+									  <img src="DSC04332.jpg" class="d-block w-100" alt="...">
+									  <div class="carousel-caption d-none d-md-block">
+										 <h5>Комната 2</h5>
+										 <p>фото 3</p>
+									  </div>
+									</div>
+								 </div>
+								<button class="carousel-control-prev carousel-control" type="button" data-bs-target="#room-1"  data-bs-slide="prev">
+								  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								  <span class="visually-hidden">Предыдущий</span>
+								</button>
+								<button class="carousel-control-next carousel-control" type="button" data-bs-target="#room-1"  data-bs-slide="next">
+								  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+								  <span class="visually-hidden">Следующий</span>
+								</button>
+							 </div>
+						</div>
+
+
+						<!-- Cтоимость, хар... -->
+						<div class="description col-12 col-lg-6 border d-flex flex-column justify-content-around">
+
+
+
+							<ul class="nav nav-pills mb-3" id="pills-tab-1" role="tablist">
+								<li class="nav-item" role="presentation">
+								  <button class="nav-link active" id="pills-home-tab-1" data-bs-toggle="pill" data-bs-target="#pills-home-1" type="button" role="tab" aria-controls="pills-home-1" aria-selected="true">Стоимость</button>
+								</li>
+								<li class="nav-item" role="presentation">
+								  <button class="nav-link" id="pills-profile-tab-1" data-bs-toggle="pill" data-bs-target="#pills-profile-1" type="button" role="tab" aria-controls="pills-profile-1" aria-selected="false">Девайсы</button>
+								</li>
+								<li class="nav-item" role="presentation">
+								  <button class="nav-link" id="pills-contact-tab-1" data-bs-toggle="pill" data-bs-target="#pills-contact-1" type="button" role="tab" aria-controls="pills-contact-1" aria-selected="false">Принадлежности</button>
+								</li>
+							 </ul>
+							 <div class="tab-content" id="pills-tabContent">
+								<div class="tab-pane fade show active" id="pills-home-1" role="tabpanel" aria-labelledby="pills-home-1-tab">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, tenetur recusandae, laboriosam ad nisi voluptatem eum ipsam provident id alias amet velit.</div>
+								<div class="tab-pane fade" id="pills-profile-1" role="tabpanel" aria-labelledby="pills-profile-tab-1">...</div>
+								<div class="tab-pane fade" id="pills-contact-1" role="tabpanel" aria-labelledby="pills-contact-tab-1">...</div>
+							 </div>
+							 <!-- Кнопка -->
+							 <a href="#" class="button7 align-self-end justify-self-end">Забронировать</a>
+						</div>
+					</div>
+				</div>
+
+
+
+				<!-- Комната 2 -->
 				<div class="room-el col-12 border my-4">
 					<div class="row">
 
@@ -142,83 +239,10 @@
 
 
 						<!-- Cтоимость, хар... -->
-						<div class="description col-12 col-lg-6 border">
+						<div class="description col-12 col-lg-6 border d-flex flex-column justify-content-around">
 
 
 
-							<ul class="nav nav-pills mb-3" id="pills-tab-1" role="tablist">
-								<li class="nav-item" role="presentation">
-								  <button class="nav-link active" id="pills-home-tab-1" data-bs-toggle="pill" data-bs-target="#pills-home-1" type="button" role="tab" aria-controls="pills-home-1" aria-selected="true">Стоимость</button>
-								</li>
-								<li class="nav-item" role="presentation">
-								  <button class="nav-link" id="pills-profile-tab-1" data-bs-toggle="pill" data-bs-target="#pills-profile-1" type="button" role="tab" aria-controls="pills-profile-1" aria-selected="false">Девайсы</button>
-								</li>
-								<li class="nav-item" role="presentation">
-								  <button class="nav-link" id="pills-contact-tab-1" data-bs-toggle="pill" data-bs-target="#pills-contact-1" type="button" role="tab" aria-controls="pills-contact-1" aria-selected="false">Принадлежности</button>
-								</li>
-							 </ul>
-							 <div class="tab-content" id="pills-tabContent">
-								<div class="tab-pane fade show active" id="pills-home-1" role="tabpanel" aria-labelledby="pills-home-1-tab">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, tenetur recusandae, laboriosam ad nisi voluptatem eum ipsam provident id alias amet velit.</div>
-								<div class="tab-pane fade" id="pills-profile-1" role="tabpanel" aria-labelledby="pills-profile-tab-1">...</div>
-								<div class="tab-pane fade" id="pills-contact-1" role="tabpanel" aria-labelledby="pills-contact-tab-1">...</div>
-							 </div>
-
-
-
-						</div>
-					</div>
-				</div>
-
-
-
-
-				<!-- Комната 2 -->
-				<div class="col-12 room-el my-4">
-					<div class="row">
-						<!-- Слайдер -->
-						<div class="image-container col-12 col-xl-6 border">
-							<div id="room-1" class="carousel slide room col-12" data-bs-interval="false" data-bs-ride="carousel">
-								<div class="carousel-indicators">
-								  <button type="button" data-bs-target="#room-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-								  <button type="button" data-bs-target="#room-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-								  <button type="button" data-bs-target="#room-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-								</div>
-								<div class="carousel-inner">
-									<div class="carousel-item active">
-									  <img src="19.jpg" class="d-block w-100" alt="...">
-									  <div class="carousel-caption d-none d-md-block">
-										 <h5>Комната 2</h5>
-										 <p>фото 1</p>
-									  </div>
-									</div>
-									<div class="carousel-item">
-									  <img src="20.jpg" class="d-block w-100 h-100" alt="...">
-									  <div class="carousel-caption d-none d-md-block">
-										 <h5>Комната 2</h5>
-										 <p>фото 2</p>
-									  </div>
-									</div>
-									<div class="carousel-item">
-									  <img src="DSC04332.jpg" class="d-block w-100" alt="...">
-									  <div class="carousel-caption d-none d-md-block">
-										 <h5>Комната 2</h5>
-										 <p>фото 3</p>
-									  </div>
-									</div>
-								 </div>
-								<button class="carousel-control-prev carousel-control" type="button" data-bs-target="#room-1"  data-bs-slide="prev">
-								  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								  <span class="visually-hidden">Предыдущий</span>
-								</button>
-								<button class="carousel-control-next carousel-control" type="button" data-bs-target="#room-1"  data-bs-slide="next">
-								  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-								  <span class="visually-hidden">Следующий</span>
-								</button>
-							 </div>
-						</div>
-
-						<!-- Cтоимость, хар... -->
-						<div class="description col-12 col-xl-6 border">
 							<ul class="nav nav-pills mb-3" id="pills-tab-2" role="tablist">
 								<li class="nav-item" role="presentation">
 								  <button class="nav-link active" id="pills-home-tab-2" data-bs-toggle="pill" data-bs-target="#pills-home-2" type="button" role="tab" aria-controls="pills-home-2" aria-selected="true">Стоимость</button>
@@ -235,10 +259,15 @@
 								<div class="tab-pane fade" id="pills-profile-2" role="tabpanel" aria-labelledby="pills-profile-tab-2">...</div>
 								<div class="tab-pane fade" id="pills-contact-2" role="tabpanel" aria-labelledby="pills-contact-tab-2">...</div>
 							 </div>
+							 <!-- Кнопка -->
+							 <a href="#" class="button7 align-self-end justify-self-end">Забронировать</a>
 						</div>
-
-
 					</div>
+				</div>
+				
+
+
+				
 				</div>
 			</div>
 		</div>
